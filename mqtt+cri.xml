@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Program>
+    <Header RobotName="igus REBEL-6DOF" RobotType="REBEL-6DOF-01" GripperType="" Software="iRC V902-14-002" VelocitySetting="0" />
+    <Joint AbortCondition="False" Nr="1" Source="Numerical" velPercent="40" acc="40" smooth="0" a1="0.01" a2="19.5" a3="90.1" a4="-0.02" a5="65.2" a6="80.1" e1="0" e2="0" e3="0" Descr="" />
+    <Linear AbortCondition="False" Nr="2" Source="Numerical" vel="100" acc="40" smooth="0" UserFrame="#base" x="100" y="250" z="250" a="-179.99" b="1.59" c="-179.99" e1="0" e2="0" e3="0" Descr="" />
+    <Linear AbortCondition="False" Nr="3" Source="Numerical" vel="100" acc="40" smooth="0" UserFrame="#base" x="-100" y="250" z="250" a="180" b="0" c="-180" e1="0" e2="0" e3="0" Descr="" />
+    <Linear AbortCondition="False" Nr="4" Source="Numerical" vel="100" acc="40" smooth="0" UserFrame="#base" x="-100" y="250" z="212" a="179.99" b="0.02" c="-180" e1="0" e2="0" e3="0" Descr="" />
+    <Sub Nr="5" File="GripperClose.xml" Descr="" />
+    <Wait Nr="6" Type="Time" Seconds="2.5" Descr="" />
+    <Linear AbortCondition="False" Nr="7" Source="Numerical" vel="100" acc="40" smooth="0" UserFrame="#base" x="-100" y="250" z="350" a="180" b="0" c="-180" e1="0" e2="0" e3="0" Descr="pick and it will start placing" />
+    <Joint AbortCondition="False" Nr="8" Source="Numerical" velPercent="40" acc="40" smooth="0" a1="-111" a2="-1.3" a3="113.6" a4="0" a5="67.7" a6="87.1" e1="0" e2="0" e3="0" Descr="" />
+    <Linear AbortCondition="False" Nr="9" Source="Numerical" vel="100" acc="40" smooth="0" UserFrame="#base" x="-100" y="-250" z="250" a="-18.89" b="0.02" c="-179.99" e1="0" e2="0" e3="0" Descr="" />
+    <Linear AbortCondition="False" Nr="10" Source="Numerical" vel="100" acc="40" smooth="0" UserFrame="#base" x="-100" y="-250" z="220" a="-18.89" b="0.02" c="-179.99" e1="0" e2="0" e3="0" Descr="" />
+    <Sub Nr="11" File="GripperOpen.xml" Descr="" />
+    <Wait Nr="12" Type="Time" Seconds="2.5" Descr="" />
+    <Linear AbortCondition="False" Nr="13" Source="Numerical" vel="100" acc="40" smooth="0" UserFrame="#base" x="-100" y="-250" z="250" a="-18.81" b="0" c="180" e1="0" e2="0" e3="0" Descr="" />
+    <Joint AbortCondition="False" Nr="14" Source="Numerical" velPercent="40" acc="40" smooth="0" a1="90" a2="-6.1" a3="118.2" a4="0" a5="67.9" a6="108.2" e1="0" e2="0" e3="0" Descr="" />
+    <Linear AbortCondition="False" Nr="15" Source="Numerical" vel="100" acc="40" smooth="0" UserFrame="#base" x="0" y="250" z="250" a="161.83" b="0.02" c="-179.99" e1="0" e2="0" e3="0" Descr="" />
+    <Linear AbortCondition="False" Nr="16" Source="Numerical" vel="100" acc="40" smooth="0" UserFrame="#base" x="0" y="250" z="212" a="161.83" b="0.02" c="-179.99" e1="0" e2="0" e3="0" Descr="" />
+    <Sub Nr="17" File="GripperClose.xml" Descr="" />
+    <Wait Nr="18" Type="Time" Seconds="2.5" Descr="" />
+    <Linear AbortCondition="False" Nr="19" Source="Numerical" vel="100" acc="40" smooth="0" UserFrame="#base" x="0" y="250" z="350" a="161.83" b="0.02" c="-179.99" e1="0" e2="0" e3="0" Descr="" />
+    <Joint AbortCondition="False" Nr="20" Source="Numerical" velPercent="40" acc="40" smooth="0" a1="-89.8" a2="-6.1" a3="118.1" a4="-0.1" a5="68" a6="16.2" e1="0" e2="0" e3="0" Descr="" />
+    <Linear AbortCondition="False" Nr="21" Source="Numerical" vel="100" acc="40" smooth="0" UserFrame="#base" x="0" y="-250" z="220" a="-11.25" b="0.02" c="-179.99" e1="0" e2="0" e3="0" Descr="" />
+    <Sub Nr="22" File="GripperOpen.xml" Descr="" />
+    <Wait Nr="23" Type="Time" Seconds="2.5" Descr="" />
+    <Linear AbortCondition="False" Nr="24" Source="Numerical" vel="100" acc="40" smooth="0" UserFrame="#base" x="0" y="-250" z="250" a="-11.25" b="0.02" c="-179.99" e1="0" e2="0" e3="0" Descr="" />
+    <Joint AbortCondition="False" Nr="25" Source="Numerical" velPercent="40" acc="40" smooth="0" a1="68.05" a2="-1.2" a3="113.6" a4="0" a5="67.7" a6="98.6" e1="0" e2="0" e3="0" Descr="" />
+    <Linear AbortCondition="False" Nr="26" Source="Numerical" vel="100" acc="40" smooth="0" UserFrame="#base" x="100.8" y="250" z="212" a="149.46" b="0.02" c="-179.99" e1="0" e2="0" e3="0" Descr="" />
+    <Sub Nr="27" File="GripperClose.xml" Descr="" />
+    <Wait Nr="28" Type="Time" Seconds="2.5" Descr="" />
+    <Linear AbortCondition="False" Nr="29" Source="Numerical" vel="100" acc="40" smooth="0" UserFrame="#base" x="100.8" y="250" z="250" a="149.46" b="0.02" c="-179.99" e1="0" e2="0" e3="0" Descr="" />
+    <Joint AbortCondition="False" Nr="30" Source="Numerical" velPercent="40" acc="40" smooth="0" a1="-68.2" a2="-0.8" a3="113.2" a4="0" a5="68.2" a6="98.4" e1="0" e2="0" e3="0" Descr="" />
+    <Linear AbortCondition="False" Nr="31" Source="Numerical" vel="100" acc="40" smooth="0" UserFrame="#base" x="100.2" y="-250.6" z="220" a="13.34" b="0.02" c="-179.99" e1="0" e2="0" e3="0" Descr="" />
+    <Sub Nr="32" File="GripperOpen.xml" Descr="" />
+    <Wait Nr="33" Type="Time" Seconds="1.5" Descr="" />
+    <Linear AbortCondition="False" Nr="34" Source="Numerical" vel="100" acc="40" smooth="0" UserFrame="#base" x="100.2" y="-250.6" z="250" a="13.34" b="0.02" c="-179.99" e1="0" e2="0" e3="0" Descr="" />
+    <Joint AbortCondition="False" Nr="35" Source="Numerical" velPercent="40" acc="40" smooth="0" a1="-7.52" a2="-1.2" a3="113.5" a4="0" a5="67.8" a6="98.48" e1="0" e2="0" e3="0" Descr="" />
+</Program>

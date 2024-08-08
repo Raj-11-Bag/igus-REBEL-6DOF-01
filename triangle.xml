@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Program>
+    <Header RobotName="igus REBEL-6DOF" RobotType="igus-REBEL/REBEL-6DOF-01" GripperType="" Software="iRC V902-14-002" VelocitySetting="0" />
+    <Joint AbortCondition="False" Nr="1" Source="Numerical" velPercent="40" acc="40" smooth="0" a1="0.39" a2="-59.01" a3="139.03" a4="-0.1" a5="95" a6="73.89" e1="0" e2="0" e3="0" Descr="" />
+    <Linear AbortCondition="False" Nr="2" Source="Numerical" vel="100" acc="40" smooth="0" UserFrame="#base" x="200" y="-100" z="300" a="106.43" b="1.47" c="175.24" e1="0" e2="0" e3="0" Descr="" />
+    <Linear AbortCondition="False" Nr="3" Source="Numerical" vel="100" acc="40" smooth="0" UserFrame="#base" x="200" y="100" z="300" a="106.43" b="1.47" c="175.24" e1="0" e2="0" e3="0" Descr="" />
+    <Linear AbortCondition="False" Nr="4" Source="Numerical" vel="100" acc="40" smooth="0" UserFrame="#base" x="100.3" y="0.5" z="300" a="106.43" b="1.47" c="175.24" e1="0" e2="0" e3="0" Descr="" />
+</Program>

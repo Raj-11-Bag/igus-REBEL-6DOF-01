@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Program>
+    <Header RobotName="igus REBEL-6DOF" RobotType="igus-REBEL/REBEL-6DOF-01" GripperType="" Software="iRC V902-14-002" VelocitySetting="0" />
+    <Output Nr="1" Channel="DOut31" State="True" Descr="" />
+    <Output Nr="2" Channel="DOut32" State="False" Descr="" />
+</Program>

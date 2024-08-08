@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Program>
+    <Header RobotName="igus REBEL-6DOF" RobotType="REBEL-6DOF-01" GripperType="" Software="iRC V902-14-002" VelocitySetting="0" />
+    <Store Nr="1" Type="position" Value="297.2 0 215.3 180 0 -180" ValueJoints="0 7.39 108.79 0 63.82 0 0 0 0" Name="pos1_grab" Descr="Chesposition 1" />
+    <Store Nr="2" Type="position" Value="297.2 0 230 180 0 -180" ValueJoints="0 7.39 108.79 0 63.82 0 0 0 0" Name="pos1_launch" Descr="Chesposition 1 Leave" />
+    <Store Nr="3" Type="position" Value="297 0 300 180 0 -180" ValueJoints="0 7.39 108.79 0 63.82 0 0 0 0" Name="default_position" Descr="default chess position" />
+    <Store Nr="4" Type="position" Value="337 0 215.3 180 0 -180" ValueJoints="0 7.39 108.79 0 63.82 0 0 0 0" Name="pos2_grab" Descr="Chesposition 2 grab" />
+    <Store Nr="5" Type="position" Value="337 0 230 180 0 -180" ValueJoints="0 7.39 108.79 0 63.82 0 0 0 0" Name="pos2_launch" Descr="Chesposition 2 launch" />
+    <Store Nr="6" Type="position" Value="337 -40 215.3 180 0 -180" ValueJoints="0 7.39 108.79 0 63.82 0 0 0 0" Name="pos3_grab" Descr="Chesposition 3 grab" />
+    <Store Nr="7" Type="position" Value="337 -40 230 180 0 -180" ValueJoints="0 7.39 108.79 0 63.82 0 0 0 0" Name="pos3_launch" Descr="Chesposition 3 launch" />
+    <Store Nr="8" Type="position" Value="297 -40 215.3 180 0 -180" ValueJoints="0 7.39 108.79 0 63.82 0 0 0 0" Name="pos4_grab" Descr="Chesposition 4 grab" />
+    <Store Nr="9" Type="position" Value="297 -40 230 180 0 -180" ValueJoints="0 7.39 108.79 0 63.82 0 0 0 0" Name="pos4_launch" Descr="Chesposition 4 launch" />
+</Program>
