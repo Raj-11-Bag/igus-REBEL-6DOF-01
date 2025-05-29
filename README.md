@@ -1,4 +1,4 @@
-# igus-REBEL-6DOF-01-Pick-and-Place-System
+# Smartphone-Controlled Robotic Arm | MQTT + ROS2 | igus REBEL 6DOF Project
 
 This repository contains the code and configurations for an automated pick-and-place system designed for the igus REBEL-6DOF robot. The system is built to handle complex object manipulation tasks, leveraging the MQTT protocol for real-time communication and control.
 
