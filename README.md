@@ -49,9 +49,10 @@ Update the MQTT broker settings in `MQTT_Handler.py`.
 ```bash
 python3.12.exe CRI_Client(1).py  #if you want  simple Pick&Place Operation
 or
-python3.12.exe CRI_Pick&Place.py  #if you want  simple Pick&Place Operation
+python3.12.exe CRI_Pick&Place.py  #if you want Customize Pick&Place Operation
 ```
 ### Architecture_diagram
+```bash
 Smartphone App
      ↓
 MQTT Broker (My MQTT)
@@ -61,7 +62,7 @@ CRI_Client(1).py (Python)
 igus REBEL via XML/Control API
      ↺
 Feedback to CRI_Client(1).py
-
+```
 
 ### Contributions
 Contributions, issues, and feature requests are welcome! Feel free to check the issues page or submit a pull request.
