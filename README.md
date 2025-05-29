@@ -9,69 +9,59 @@ Watch the full video of the robotic arm in action (pick-and-place via smartphone
 [![Watch the video](https://img.youtube.com/vi/3a9YwpJj9Qo/0.jpg)](https://youtu.be/3a9YwpJj9Qo)
 
 
-## Repository Contents
 
-### 1. Main Control Script
-The core Python script that orchestrates the robot's operations, including:
-- Connecting to the robot.
-- Handling MQTT messages.
-- Executing pick-and-place tasks.
-- Commands for connecting and disconnecting the robot, enabling/disabling it, loading programs, and controlling the gripper.
+## 🧠 Key Features
+- Real hardware integration with igus REBEL 6DOF
+- Real-time control via MQTT from smartphone interface
+- Custom XML sequences and MQTT payload parsing
+- Developed entirely in Python (VS Code) + igus software
 
-### 2. MQTT Handler Module
-A custom Python module (`MQTT_Handler.py`) responsible for:
-- Managing MQTT communications.
-- Subscribing to topics, parsing messages, and publishing robot status updates.
-- Enabling seamless integration with IoT platforms.
+## 🧱 Technologies Used
+- Python (3.x)
+- MQTT (paho-mqtt)
+- igus Robot Control V14 (XML format)
 
-### 3. Robot Motion Programs
-XML configuration files (`mqtt+cri.xml` and `assignment4final.xml`) that define:
-- The robot's joint and linear movements.
-- Gripper actions and wait times.
-- Essential configurations for executing precise and coordinated pick-and-place actions.
+## 📁 Project Structure
+- `CRI_Client(1).py & CRI_Pick&Place.py`: Python script that receives commands and controls robot
+- `xml.files/`: Contains .xml igus V14 programs
+-  Demo of real pick-and-place process
 
-### 4. Pick and Place Logic
-Pre-defined joint positions for picking and placing objects in various locations. The script supports:
-- Dynamic selection of pick and place positions based on user input or task list.
-- Flexible and adaptable operations.
-
-### 5. Multithreading for Asynchronous Operations
-The script uses multithreading to handle:
-- Simultaneous tasks such as reading messages from the robot.
-- Processing MQTT commands and executing movements without blocking the main execution flow.
-
-## Key Features
-- **Real-Time Communication:** Utilizes MQTT protocol for real-time communication between the robot and external devices, allowing dynamic task assignments and status monitoring.
-- **Flexible Motion Control:** Supports both joint and linear movements with precise control over velocity, acceleration, and smoothness.
-- **Customizable Pick-and-Place Positions:** Easily configurable pick-and-place positions with the ability to add or modify target locations.
-- **Gripper Control:** Implements commands for opening and closing the gripper, integrated into the motion sequence for seamless object handling.
-- **Error Handling and Recovery:** Includes basic error handling to ensure robust operations in unpredictable environments.
+## 🛠 Prerequisites
+- igus Robot Control V14 installed and connected to REBEL robot
+- MQTT broker (My MQTT) running
+- Python 3.x with `paho-mqtt`
+- Libraries threading, socket, random, time
 
 ## Getting Started
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/igus-REBEL-6DOF-Pick-and-Place-System.git
+git clone https://github.com/Raj-11-Bag/igus-REBEL-6DOF-01.git
 ```
-### 2. **Install Necessary Dependencies (if any)**
+### 2. **Install Necessary Dependencies **
    ```bash
-   pip install -r requirements.txt
+   pip install -r paho-mqtt 
 ```
 ### 3. Configure MQTT Settings
 Update the MQTT broker settings in `MQTT_Handler.py`.
 
 ### 4. Run the Main Control Script
 ```bash
-python main_control_script.py
+python3.12.exe CRI_Client(1).py  #if you want  simple Pick&Place Operation
+or
+python3.12.exe CRI_Pick&Place.py  #if you want  simple Pick&Place Operation
 ```
+### Architecture_diagram
+Smartphone App
+     ↓
+MQTT Broker (My MQTT)
+     ↓
+CRI_Client(1).py (Python)
+     ↓
+igus REBEL via XML/Control API
+     ↺
+Feedback to CRI_Client(1).py
 
-### Usage
-- Modify the XML configuration files to adjust robot movement paths.
-- Customize MQTT topics and broker settings as needed.
-- Use the provided Python functions to integrate additional sensors or control logic.
-
-### License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ### Contributions
 Contributions, issues, and feature requests are welcome! Feel free to check the issues page or submit a pull request.
