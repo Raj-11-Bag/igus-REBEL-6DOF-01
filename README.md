@@ -26,6 +26,19 @@ Watch the full video of the robotic arm in action (pick-and-place via smartphone
 - `xml.files/`: Contains .xml igus V14 programs
 -  Demo of real pick-and-place process
 
+### Architecture_diagram
+```bash
+Smartphone App
+     ↓
+MQTT Broker (My MQTT)
+     ↓
+CRI_Client(1).py (Python)
+     ↓
+igus REBEL via XML/Control API
+     ↺
+Feedback to CRI_Client(1).py
+```
+
 ## 🛠 Prerequisites
 - igus Robot Control V14 installed and connected to REBEL robot
 - MQTT broker (My MQTT) running
@@ -50,18 +63,6 @@ Update the MQTT broker settings in `MQTT_Handler.py`.
 python3.12.exe CRI_Client(1).py  #if you want  simple Pick&Place Operation
 or
 python3.12.exe CRI_Pick&Place.py  #if you want Customize Pick&Place Operation
-```
-### Architecture_diagram
-```bash
-Smartphone App
-     ↓
-MQTT Broker (My MQTT)
-     ↓
-CRI_Client(1).py (Python)
-     ↓
-igus REBEL via XML/Control API
-     ↺
-Feedback to CRI_Client(1).py
 ```
 
 ### Contributions
